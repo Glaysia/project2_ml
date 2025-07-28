@@ -1,0 +1,33 @@
+{
+    "editor.formatOnSave": true,
+    "[python]": {
+      "editor.formatOnSave": true,
+      "editor.formatOnType": true,
+      "editor.formatOnPaste": true,
+      "editor.defaultFormatter": "ms-python.autopep8",
+      "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+      },
+      "editor.tabSize": 2,
+      "prettier.tabWidth": 2,
+      "editor.indentSize": "tabSize",
+      "editor.detectIndentation": false,
+      
+    },
+    "[ipynb]":{
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter":"ms-python.autopep8"
+    },
+  "autopep8.args": [
+      "--indent-size", "2",   // 실제 들여쓰기 폭
+    "--ignore", "E121"      // 4칸 규칙 경고 억제(선택)
+  ],
+  "python.analysis.autoImportCompletions": false,
+  "python.analysis.typeCheckingMode": "standard",
+  "python.languageServer": "Pylance",
+  "editor.inlayHints.enabled": "on",
+  "python.analysis.inlayHints.variableTypes": true,
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python-envs.defaultEnvManager": "ms-python.python:system",
+  "python-envs.pythonProjects": []
+}
